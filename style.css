@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: whitesmoke;
+    padding: 20px;
+}
+
+/*----HEADER----*/
+.header-container {
+    position: relative;
+    z-index: 10;
+}
+
+/*----IMAGE----*/
+
+/*----NAVIGATION----*/
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 20px;
+}
+
+.main-nav a{
+    margin-right: 20px;
+}
+
+.nav-left-name {
+    color: #333;
+    font-size: 24px;
+}
+
+.nav-left-name a{
+    text-decoration: none;
+    color: gray;
+    font-weight: 700;
+}
+
+.nav-left-name a:hover {
+    color: #333;
+    transition: .5s ease-in-out;
+    letter-spacing: 50px;
+}
+
+.nav-right a{
+    text-decoration: none;
+    border: 2px solid transparent;
+    color: gray;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-right a:hover{
+    border-top-color: darkgray;
+    border-bottom-color: darkgray;
+    color: darkgray;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+/*----CONTENT----*/
+
+
+.content-container {
+    display: flex;
+    height: 93vh;
+    z-index: 11;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    overflow: hidden;
+}
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px;
+}
+
+.con-img {
+    width: 300px;
+    background-color: blue;
+    overflow: hidden;
+    border-radius: 20px;
+    height: 350px;
+}
+.con-img img {
+    height: 100%;
+    width: 100%;
+}
+
+.textarea {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 500px;
+    justify-content: center;
+}
+.textarea span {
+    padding: 5px 25px;
+    margin-bottom: 5px;
+    background-color: var(black, gray);
+    border: 2px solid #3b3b3b;
+    border-radius: 100px;
+    color: whitesmoke;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.textarea span a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+span a:hover {
+    background-color: darkgray;
+    transition: 1s;
+}
+
+.textarea h1, p{
+    letter-spacing: 8px;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/*----DIV SVG----*/
+.absoBg {
+    background-color: darkgray;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 1%;
+    z-index: -1;
+    left: 0;
+}
+.textarea h1 {
+    line-height: 90%;
+}
+.textarea p {
+    line-height: 90%;
+}
+
+@media only screen and (max-width: 900px) {
+    .section {
+        flex-direction: column-reverse;
+    }
+    .textarea {
+        padding-top: 20px;
+        align-items: center;
+        text-align: center;
+    }
+    .absoBg {
+        top: 5%;
+    }
+}
+.custom-shape-divider-top-1709884639 .shape-fill {
+    fill: #9E9E9E;
+}
+
+/*----PROJECTS*----*/
+
